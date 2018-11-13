@@ -1,12 +1,15 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Flujos7 {
 
 public static void main(String[]args) throws IOException{
-
-    FileReader in = new FileReader("C:\\Users\\Jan\\Desktop\\test.txt");
+	System.out.println("introduce la ruta: ");
+	Scanner scan = new Scanner(System.in);
+	String linea = scan.nextLine();
+    FileReader in = new FileReader(linea);
     BufferedReader br = new BufferedReader(in);
 
     String line;
